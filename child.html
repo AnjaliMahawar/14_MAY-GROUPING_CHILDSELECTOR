@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#a > div#b {
+            color: blueviolet;
+            border: 2px solid rgb(23, 22, 22);
+        }
+        div#c > div#d > div#e{
+            color:rgb(10, 10, 10);
+            background-color: rgb(242, 204, 16);
+            border: 2em solid white;
+
+            
+        }
+        div#c > div#d{
+            background-color: rgb(161, 75, 242);
+            border: 2em solid white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CHILD SELECTOR ></h1>
+    <div id="a"> parent
+        <div id="b">child
+        </div>
+    </div>
+    <div style="background-color:rgb(242, 141, 141)  ;" id="c">grand parent
+        <div id="d">parent
+            <div id="e">child</div>
+        </div>
+    </div>
+</body>
+</html>
